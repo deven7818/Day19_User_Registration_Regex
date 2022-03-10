@@ -27,6 +27,21 @@ public class UserDetails {
 			System.out.println("Invalid... Please Enter Valid first name");
 	}
 	
+	/**
+	 * Method to Enter LastName
+	 * Last Name should start with capital and has minimum 3 characters
+	 * if entered lastName matches the pattern then it gives true value
+	 * else it gives false Invalid last name
+	 */
+	public void lastName() {
+		System.out.println("Enter Last Name : ");
+		String LastName = sc.next();
+		boolean result = Pattern.matches("[A-Z][a-z]{2,}", LastName);
+		if(result) 
+			System.out.println("Valid LastName");
+		else
+			System.out.println("Invalid... Please Enter Valid last name");
+	}
 
 	
 }
