@@ -25,5 +25,9 @@ public class UserRegistration
     	 * calling lastName method to ensure valid last name
     	 */
     	user.lastName();
+    	/**
+    	 * Calling email method to ensure valid email 
+    	 */
+    	user.email();
     }
 }
