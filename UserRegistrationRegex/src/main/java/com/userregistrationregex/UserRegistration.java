@@ -29,5 +29,10 @@ public class UserRegistration
     	 * Calling email method to ensure valid email 
     	 */
     	user.email();
+    	/**
+    	 * Calling mobileNumber method to ensure valid Mobile Number
+    	 */
+    	user.moblieNumber();
+    	
     }
 }
