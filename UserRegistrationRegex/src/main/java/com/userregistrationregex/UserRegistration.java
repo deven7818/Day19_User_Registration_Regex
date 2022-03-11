@@ -11,6 +11,7 @@ package com.userregistrationregex;
  * 5. User need to enter a valid Password with at least 8 characters
  * 5. User need to enter a valid Password with at least 8 characters and 1 Upper case
  * 6. User need to enter a valid Password with at least 8 characters and 1 Upper case and 1 Numeric number
+ * 7. Password should have exactly 1 special character
  */
 public class UserRegistration 
 {
@@ -45,5 +46,6 @@ public class UserRegistration
     	 * Calling password method to ensure valid password
     	 */
     	user.password();
+    	
     }
 }

@@ -53,6 +53,7 @@ public class UserDetails {
 		System.out.println("Enter the Email : ");
 		String Email = sc.next();
 		boolean result = Pattern.matches("^[a-z0-9]+([_+-.][0-9a-z]+)*@[a-z]+.[a-z]{2,3}$", Email);
+		//"^[a-zA-Z-9]+([._+-]*[0-9A-Za-z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2,4})?$"; // JunitTest
 		if(result)
 			System.out.println("Valid Email");
 		else
@@ -68,11 +69,15 @@ public class UserDetails {
 	public void moblieNumber() {
 		System.out.println("Enter Mobile Number : ");
 		String Mobile = sc.next();
-		boolean result = Pattern.matches("^[0-9]{2}\\s[0-9]{10}$", Mobile);
-		if(result)
+		//boolean result = Pattern.matches("^[0-9]\\s{3}[0-9]{10}$", Mobile);
+		
+		boolean result = Pattern.matches("^([0-9]{2}[\\s]?){1}[0-9]{9,10}$", Mobile);
+		if(result) {
 			System.out.println("Valid Mobile Number");
-		else 
+		}
+		else { 
 			System.out.println("Invalid.... Please Enter Valid Mobile Number");
+		}
 	}
 	
 	/**
@@ -80,17 +85,17 @@ public class UserDetails {
 	 * 1. password should have minimum 8 Characters
 	 * 2. Password should have at least 1 Upper case Character 
 	 * 3. password should have at least 1 numeric Number in password 
+	 * 4. password should have exactly 1 special character
 	 */
 	public void password() {
 		System.out.println("Enter Password : ");
 		String Password = sc.next();
-		boolean result = Pattern.matches("^(?=.*[A-Z]).{8,}$", Password);
+		boolean result = Pattern.matches("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]*[\\@\\#\\^][a-zA-Z0-9]*$", Password);
+		//"^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]*[\\@\\#\\^][a-zA-Z0-9]*$"
 		if(result)
 			System.out.println("Valid Password");
 		else
 			System.out.println("Invalid Password");
-	}
-	
-	
+	}	
 	
 }
