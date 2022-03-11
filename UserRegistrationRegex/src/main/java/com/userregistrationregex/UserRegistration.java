@@ -21,18 +21,25 @@ public class UserRegistration
     	 * calling firstName method to ensure valid first name
     	 */
     	user.firstName();
+    	
     	/**
     	 * calling lastName method to ensure valid last name
     	 */
     	user.lastName();
+    	
     	/**
     	 * Calling email method to ensure valid email 
     	 */
     	user.email();
+    	
     	/**
     	 * Calling mobileNumber method to ensure valid Mobile Number
     	 */
     	user.moblieNumber();
     	
+    	/**
+    	 * Calling password method to ensure valid password
+    	 */
+    	user.password();
     }
 }
