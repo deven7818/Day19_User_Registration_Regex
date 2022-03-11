@@ -8,8 +8,9 @@ package com.userregistrationregex;
  * 2. User need to enter a valid Last Name
  * 3. User need to enter a valid Email address
  * 4. User need to enter a valid Mobile Number with country code and 10 digit number 
+ * 5. User need to enter a valid Password with at least 8 characters
  * 5. User need to enter a valid Password with at least 8 characters and 1 Upper case
- *
+ * 6. User need to enter a valid Password with at least 8 characters and 1 Upper case and 1 Numeric number
  */
 public class UserRegistration 
 {
